@@ -1,0 +1,44 @@
+/* pages/mall/mall.wxss */
+page{
+  height: 100%;
+  overflow:hidden;
+  display: flex;
+  font-size: 14px;
+}
+.sidebar{
+  width: 240rpx;
+  background-color: #cccccc;
+  overflow-x: hidden;
+}
+.nav-item{
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 16rpx;
+  border-bottom: 1px solid #fff;
+  border-left: 2px solid #dedede;
+  color:#999;
+}
+.nav-item.current{
+  border-left-color: #c00;
+  color:#c00;
+  background-color: #fff;
+}
+.content{
+  flex: 1;
+}
+.product{
+  padding: 32rpx;
+}
+
+.content image{
+   width: 510rpx;
+  height: 510rpx
+}
+.priceAdd{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price{
+  color: #c00;
+}

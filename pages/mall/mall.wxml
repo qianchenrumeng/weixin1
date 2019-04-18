@@ -1,0 +1,39 @@
+<!--pages/mall/mall.wxml-->
+
+<view class='sidebar'>
+  <view 
+    wx:for="{{navs}}"
+    wx:key="{{item.id}}"
+    data-id="{{item.id}}"
+    class="nav-item {{currentCateId === item.id ? 'current': ''}}"
+    catchtap='changeCate'
+     scroll-y="true"
+  >
+  {{item.name}}
+  </view>
+</view>
+<scroll-view class='content'
+  scroll-y
+  bindscrolltoupper="refreshList"
+   bindscrolltolower="loadMore" 
+>
+  <navigator
+  url='/pages/details/details?id={{item.id}}'
+    wx:for="{{products}}"
+    class="product"
+    wv:key="{{item.id}}"
+  >
+  <image src="{{item.image}}" />
+   {{item.title}}
+   <view class='priceAdd'>
+      <view class='price'>￥{{item.price}}</view>
+   <button catchtap='addToCart'data-id="{{item.id}}"
+    data-title="{{item.title}}"
+    data-price = "{{item.price}}"
+    data-img = "{{item.image}}"
+   >加入购物车</button>
+   </view>
+  </navigator>
+  <view wx:if="{{isEnd}}">已经到底啦</view>
+</scroll-view>
+

@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/cart/cart",
+    "pages/mall/mall",
+    "pages/mine/mine",
+    "pages/details/details",
+    "pages/search/search"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f00",
+    "navigationBarTitleText": "shopping",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "acsets/icon/home.png",
+        "selectedIconPath": "acsets/icon/nohome.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "acsets/icon/noshopping.png",
+        "selectedIconPath": "acsets/icon/shopping.png"
+      },
+      {
+        "pagePath": "pages/mall/mall",
+        "text": "买买买",
+        "iconPath": "acsets/icon/nodetail.png",
+        "selectedIconPath": "acsets/icon/detail.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "acsets/icon/nomine.png",
+        "selectedIconPath": "acsets/icon/mine.png"
+      }
+    ]
+  }
+}

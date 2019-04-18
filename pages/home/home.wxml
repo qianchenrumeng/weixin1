@@ -1,0 +1,24 @@
+<!--pages/home/home.js.wxml-->
+
+<view class='topBar'>
+  <view class='location'>
+    <image src='/acsets/icon/location.png'
+      style="width:20px;height:20px;"/>
+     {{city ===  '' ? '定位中':city}}
+    </view>
+  <view class='searchBar'catchtap="toSearch">
+    <view class='fake-input'>输入关键字</view>
+    <view class='searchBtn'>搜索</view>
+  </view>
+  </view>
+<swiper
+  indicator-dots
+  autoplay
+  interval="4000"
+  duration="2000">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>

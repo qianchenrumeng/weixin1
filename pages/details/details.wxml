@@ -1,0 +1,27 @@
+<!--pages/details/details.wxml-->
+<swiper
+  indicator-dots
+  autoplay
+  interval="4000"
+  duration="2000"
+  style="width:100%;height:500rpx"
+  >
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="100%" height="320rpx" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class='detail'>
+  <view class='detailTitle'>{{title}}</view>
+  <view class='detailPrice'>￥{{price}}</view>
+  <view class='detailSaleNum'>月销量：{{saleNum}}</view>
+</view>
+<view class='detailDt'>-------详情-------</view>
+<view 
+wx:for="{{details}}"
+>
+  <view>
+    <image  src="{{item.photo.url}}" mode='widthFix'/>
+  </view>
+</view>

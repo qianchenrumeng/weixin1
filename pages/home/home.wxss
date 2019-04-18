@@ -1,0 +1,29 @@
+/* pages/home/home.js.wxss */
+.topBar{
+  display: flex;
+  font-size: 14px;
+  background-color: #dedede;
+  align-items: center;
+}
+.location{
+  display: flex;
+  align-items: center;
+  padding: 16rpx;
+}
+.searchBar{
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.fake-input{
+  flex: 1;
+  background-color: #fff;
+  height: 28px;
+  border-radius: 3px;
+  line-height: 28px;
+  color:#999;
+  padding: 0 16rpx;
+}
+.searchBtn{
+  padding: 16rpx;
+}

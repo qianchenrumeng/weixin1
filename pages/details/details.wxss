@@ -1,0 +1,21 @@
+/* pages/details/details.wxss */
+.detail{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20rpx;
+}
+.detailPrice{
+  color: #f00;
+  font-size: 40rpx;
+}
+.detailSaleNum{
+  color: #cccccc;
+  font-size: 30rpx;
+}
+.detailDt{
+  display: flex;
+  justify-content: center;
+  color: #bebebe;
+  margin-bottom: 40rpx;
+}
